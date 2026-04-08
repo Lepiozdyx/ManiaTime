@@ -19,7 +19,6 @@ struct ContentView: View {
                 .environmentObject(ps)
                 .environmentObject(settings)
                 .onAppear {
-                    OrientationManager.shared.forceLandscape()
                     MusicManager.shared.play(scene: .menu)
                     ps.onAppLaunch()
                 }
